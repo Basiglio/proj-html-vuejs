@@ -1,0 +1,34 @@
+@mixin listStyle {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+@mixin textDecorationNone {
+  text-decoration: none;
+  color: black;
+}
+
+@mixin yellowButton {
+  background-color: $yellowColor;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+@mixin blackButton {
+  background-color: black;
+  color: white;
+  &:hover {
+    background-color: $yellowColor;
+    color: black;
+  }
+}
+
+
+@mixin squareBox {
+  width: 350px;
+  height: 250px;
+  border: 1px solid black;
+}

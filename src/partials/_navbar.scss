@@ -1,0 +1,24 @@
+#navbar {
+  width: 50%;
+  height: 100%;
+  ul {
+    text-align: right;
+    li {
+      @include listStyle;
+      padding-left: 30px;
+      a {
+        text-transform: uppercase;
+        @include textDecorationNone;
+        &:hover {
+          color: $yellowColor;
+        }
+      }
+    }
+  }
+}
+
+
+
+#navbar > ul > li > .yellow_btn {
+  @include yellowButton;
+}

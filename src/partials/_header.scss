@@ -1,0 +1,79 @@
+
+header {
+  // HEADER TOP
+  #header_top {
+    width: 100%;
+    height: 130px;
+    line-height: 130px;
+    display: flex;
+    background-color: white;
+    .home_img {
+      width: 50%;
+      height: 100%;
+      img {
+        width: 220px;
+        vertical-align: middle;
+      }
+    }
+  }
+  // JUMBOTRON
+  #jumbotron {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-slider-62528242.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    .jumbotron_core {
+      width: 1000px;
+      height: 350px;
+      text-align: center;
+      line-height: 90px;
+      h1 {
+        color: white;
+        font-size: 65px;
+        text-transform: uppercase;
+      }
+      h2 {
+        color: $yellowColor;
+      }
+      ul {
+        li {
+          @include listStyle;
+        }
+      }
+      ul {
+        li {
+          .yellow_btn {
+            @include yellowButton;
+            text-transform: uppercase;
+          }
+        }
+      }
+      ul {
+        li {
+          .black_btn {
+            @include blackButton;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+
+  // HEADER BOT
+  #header_bot {
+    width: 100%;
+    height: 160px;
+    background-color: $yellowColor;
+    text-align: center;
+    line-height: 160px;
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
