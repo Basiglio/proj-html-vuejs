@@ -19,14 +19,14 @@ header {
   // JUMBOTRON
   #jumbotron {
     width: 100%;
-    height: 950px;
+    height: 810px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-slider-62528242.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    // background-position: right;
     .jumbotron_core {
       width: 1000px;
       height: 350px;
