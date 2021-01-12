@@ -9,7 +9,6 @@
   .top_section_1 {
     width: 100%;
     height: 50%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,16 +29,59 @@
   .bot_section_1 {
     width: 100%;
     height: 50%;
-    border: 1px solid black;
   }
   .bot_section_1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .box {
-      @include squareBox;
+    .flip-card {
+      @include box;
+      i {
+        padding: 15px;
+        border-radius: 50%;
+      }
+      h2 {
+        margin: 15px 0;
+      }
+      p {
+        text-align: center;
+        line-height: 30px;
+      }
     }
   }
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bcbcbd;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: $yellowColor;
+  color: black;
+  transform: rotateY(180deg);
 }
 
 #section_2 {

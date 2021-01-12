@@ -27,8 +27,13 @@
 }
 
 
-@mixin squareBox {
-  width: 350px;
-  height: 250px;
-  border: 1px solid black;
+@mixin box {
+  width: 310px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
 }
