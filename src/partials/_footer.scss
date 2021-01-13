@@ -1,10 +1,117 @@
 footer {
   width: 100%;
-  height: 650px;
-  background-image: linear-gradient(to bottom, #1e1e1e 0%, #1e1e1e 85%, #000000 85%, #000000 100%);
+  height: 950px;
+  background-image: linear-gradient(to bottom, #1e1e1e 0%, #1e1e1e 90%, #000000 90%, #000000 100%);
   border-top: 10px solid #3F3F3F;
   .wrapper_90 {
-    border: 1px solid white;
+    // border: 1px solid #5C5C5C;
+    #footer_top {
+      width: 100%;
+      height: 90%;
+      // border: 1px solid #5C5C5C;
+      display: flex;
+      .column {
+        width: 25%;
+        height: 100%;
+        padding-top: 100px;
+        // border: 1px solid #5C5C5C;
+      }
+      .column_1 {
+        display: flex;
+        margin-top: 40px;
+        .content_column {
+          p {
+            color: #5C5C5C;
+            margin: 20px 0px;
+            line-height: 30px;
+          }
+          a {
+            @include yellowButton;
+          }
+        }
+      }
+      .column_2 {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          text-transform: uppercase;
+          color: $yellowColor;
+          margin-top: 40px;
+        }
+        .content_tweet {
+          width: 100%;
+          height: 424px;
+          // border: 1px solid #5C5C5C;
+        }
+      }
+      .column_3 {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        h3 {
+          text-transform: uppercase;
+          color: $yellowColor;
+          margin-top: 40px;
+        }
+        ul {
+          li {
+            list-style: none;
+            margin: 20px 0px;
+            color: #5C5C5C;
+            i {
+              margin-right: 20px;
+            }
+            a {
+              color: #5C5C5C;
+            }
+          }
+        }
+      }
+      .column_4 {
+        padding-left: 30px;
+        h3 {
+          margin-top: 40px;
+          text-transform: uppercase;
+          color: $yellowColor;
+          margin-bottom: 50px;
+        }
+        .static_map {
+          width: 300px;
+          height: 300px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    #footer_bot {
+      width: 100%;
+      height: 10%;
+      // border: 1px solid #5C5C5C;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        color: #5C5C5C;
+        font-size: 12px;
+        a {
+          text-decoration: none;
+          color: #98b5ca;
+          &:hover {
+            color: $yellowColor;
+          }
+        }
+      }
+      span {
+        i {
+          color: #5C5C5C;
+          margin: 0px 10px;
+          &:hover {
+            color: #98b5ca;
+          }
+        }
+      }
+    }
   }
 
 }

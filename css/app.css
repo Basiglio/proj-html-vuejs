@@ -738,10 +738,108 @@ header #header_bot h2 {
 
 footer {
   width: 100%;
-  height: 650px;
-  background-image: linear-gradient(to bottom, #1e1e1e 0%, #1e1e1e 85%, #000000 85%, #000000 100%);
+  height: 950px;
+  background-image: linear-gradient(to bottom, #1e1e1e 0%, #1e1e1e 90%, #000000 90%, #000000 100%);
   border-top: 10px solid #3F3F3F;
 }
-footer .wrapper_90 {
-  border: 1px solid white;
+footer .wrapper_90 #footer_top {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+footer .wrapper_90 #footer_top .column {
+  width: 25%;
+  height: 100%;
+  padding-top: 100px;
+}
+footer .wrapper_90 #footer_top .column_1 {
+  display: flex;
+  margin-top: 40px;
+}
+footer .wrapper_90 #footer_top .column_1 .content_column p {
+  color: #5C5C5C;
+  margin: 20px 0px;
+  line-height: 30px;
+}
+footer .wrapper_90 #footer_top .column_1 .content_column a {
+  background-color: #fbcf3b;
+  text-transform: uppercase;
+}
+footer .wrapper_90 #footer_top .column_1 .content_column a:hover {
+  background-color: black;
+  color: white;
+}
+footer .wrapper_90 #footer_top .column_2 {
+  display: flex;
+  flex-direction: column;
+}
+footer .wrapper_90 #footer_top .column_2 h3 {
+  text-transform: uppercase;
+  color: #fbcf3b;
+  margin-top: 40px;
+}
+footer .wrapper_90 #footer_top .column_2 .content_tweet {
+  width: 100%;
+  height: 424px;
+}
+footer .wrapper_90 #footer_top .column_3 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+footer .wrapper_90 #footer_top .column_3 h3 {
+  text-transform: uppercase;
+  color: #fbcf3b;
+  margin-top: 40px;
+}
+footer .wrapper_90 #footer_top .column_3 ul li {
+  list-style: none;
+  margin: 20px 0px;
+  color: #5C5C5C;
+}
+footer .wrapper_90 #footer_top .column_3 ul li i {
+  margin-right: 20px;
+}
+footer .wrapper_90 #footer_top .column_3 ul li a {
+  color: #5C5C5C;
+}
+footer .wrapper_90 #footer_top .column_4 {
+  padding-left: 30px;
+}
+footer .wrapper_90 #footer_top .column_4 h3 {
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: #fbcf3b;
+  margin-bottom: 50px;
+}
+footer .wrapper_90 #footer_top .column_4 .static_map {
+  width: 300px;
+  height: 300px;
+}
+footer .wrapper_90 #footer_top .column_4 .static_map img {
+  width: 100%;
+}
+footer .wrapper_90 #footer_bot {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .wrapper_90 #footer_bot p {
+  color: #5C5C5C;
+  font-size: 12px;
+}
+footer .wrapper_90 #footer_bot p a {
+  text-decoration: none;
+  color: #98b5ca;
+}
+footer .wrapper_90 #footer_bot p a:hover {
+  color: #fbcf3b;
+}
+footer .wrapper_90 #footer_bot span i {
+  color: #5C5C5C;
+  margin: 0px 10px;
+}
+footer .wrapper_90 #footer_bot span i:hover {
+  color: #98b5ca;
 }
