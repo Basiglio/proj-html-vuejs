@@ -73,6 +73,7 @@ header #jumbotron .jumbotron_core ul li {
 header #jumbotron .jumbotron_core ul li .yellow_btn {
   background-color: #fbcf3b;
   text-transform: uppercase;
+  text-transform: uppercase;
 }
 header #jumbotron .jumbotron_core ul li .yellow_btn:hover {
   background-color: black;
@@ -81,6 +82,7 @@ header #jumbotron .jumbotron_core ul li .yellow_btn:hover {
 header #jumbotron .jumbotron_core ul li .black_btn {
   background-color: black;
   color: white;
+  text-transform: uppercase;
   text-transform: uppercase;
 }
 header #jumbotron .jumbotron_core ul li .black_btn:hover {
@@ -122,6 +124,7 @@ header #header_bot h2 {
 
 #navbar > ul > li > .yellow_btn {
   background-color: #fbcf3b;
+  text-transform: uppercase;
 }
 #navbar > ul > li > .yellow_btn:hover {
   background-color: black;
@@ -147,7 +150,7 @@ header #header_bot h2 {
 }
 #section_1 .top_section_1 hr {
   margin: 30px 0;
-  border: 2px solid #fbcf3b;
+  border: 1px solid #fbcf3b;
   width: 250px;
 }
 #section_1 .top_section_1 p {
@@ -289,7 +292,7 @@ header #header_bot h2 {
 }
 #section_3 .top_section_3 hr {
   margin: 30px 0;
-  border: 2px solid #fbcf3b;
+  border: 1px solid #fbcf3b;
   width: 250px;
 }
 #section_3 .top_section_3 p {
@@ -398,7 +401,7 @@ header #header_bot h2 {
 }
 #section_4 .top_section_4 hr {
   margin: 30px 0;
-  border: 2px solid #fbcf3b;
+  border: 1px solid #fbcf3b;
   width: 250px;
 }
 #section_4 .top_section_4 p {
@@ -524,7 +527,7 @@ header #header_bot h2 {
 }
 #section_6 .top_section_6 hr {
   margin: 30px 0;
-  border: 2px solid #fbcf3b;
+  border: 1px solid #fbcf3b;
   width: 250px;
 }
 #section_6 .top_section_6 p {
@@ -644,13 +647,101 @@ header #header_bot h2 {
 #section_7 {
   height: 550px;
 }
+#section_7 .top_section_7 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+}
+#section_7 .top_section_7 hr {
+  margin: 30px 0;
+  border: 1px solid #fbcf3b;
+  width: 250px;
+}
+#section_7 .top_section_7 p {
+  text-align: center;
+  line-height: 30px;
+}
+#section_7 .bot_section_7 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#section_7 .bot_section_7 .partners {
+  width: 60%;
+  height: 50%;
+  display: flex;
+}
+#section_7 .bot_section_7 .partners .partner_logo {
+  width: 20%;
+  height: 100%;
+}
+#section_7 .bot_section_7 .partners .partner_logo img {
+  width: 100%;
+}
 
 #section_8 {
   height: 430px;
+  width: 100%;
+  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/about-call-to-action-57862405.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#section_8 .wrapper_80 {
+  display: flex;
+}
+#section_8 .wrapper_80 .left_section_8 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#section_8 .wrapper_80 .left_section_8 h2 {
+  font-size: 40px;
+  color: white;
+  margin-top: 100px;
+}
+#section_8 .wrapper_80 .left_section_8 hr {
+  width: 250px;
+  border: 1px solid #fbcf3b;
+  margin: 50px 0px;
+}
+#section_8 .wrapper_80 .left_section_8 p {
+  font-size: 25px;
+  color: white;
+}
+#section_8 .wrapper_80 .right_section_8 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#section_8 .wrapper_80 .right_section_8 a {
+  background-color: #fbcf3b;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  margin-bottom: 10px;
+}
+#section_8 .wrapper_80 .right_section_8 a:hover {
+  background-color: black;
+  color: white;
+}
+#section_8 .wrapper_80 .right_section_8 p {
+  color: white;
 }
 
 footer {
   width: 100%;
-  height: 710px;
-  border: 1px solid black;
+  height: 650px;
+  background-image: linear-gradient(to bottom, #1e1e1e 0%, #1e1e1e 85%, #000000 85%, #000000 100%);
+  border-top: 10px solid #3F3F3F;
+}
+footer .wrapper_90 {
+  border: 1px solid white;
 }
