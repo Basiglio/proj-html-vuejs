@@ -133,9 +133,82 @@
     @include topSection;
   }
   .bot_section_3 {
-    @include botSection;
+    width: 100%;
+    height: calc(85% - 300px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .container {
+      width: 1160px;
+      height: 369px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .card {
+      width: 30%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    .card_1 {
+      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project2-featured-15013609.jpg");
+      &:hover .card_back_1 {
+        opacity: 1;
+      }
+    }
+    .card_2 {
+      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project1-featured-294276386.jpg");
+      &:hover .card_back_2 {
+        opacity: 1;
+      }
+    }
+    .card_3 {
+      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project3-featured-189023420.jpg");
+      &:hover .card_back_3 {
+        opacity: 1;
+      }
+    }
+    .card_back {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      bottom: 0%;
+      right: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(253, 207, 61, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: .2s ease;
+      .back_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        h4 {
+          color: white;
+          margin: 10px 0px;
+        }
+        h5 {
+          color: white;
+        }
+      }
+      .icons {
+        i {
+          padding: 10px;
+          background-color: white;
+          border-radius: 50%;
+          color: $yellowColor;
+        }
+      }
+    }
   }
-  
   h3 {
     text-align: center;
     text-transform: uppercase;
@@ -266,11 +339,122 @@
 
 #section_6 {
   height: 1120px;
+  background-color: #F5F5F5;
   .top_section_6 {
     @include topSection;
   }
   .bot_section_6 {
-    @include botSection;
+    width: 100%;
+    height: calc(85% - 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container {
+      width: 1160px;
+      height: 220px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .card {
+      width: 370px;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    .card_bottom {
+      width: 370px;
+      height: 400px;
+      padding: 20px;
+      background-color: white;
+      .title {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      hr {
+        margin: 15px 0;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+
+    .card_1 {
+      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/blog-post-134132600.jpg");
+      &:hover .card_back_1 {
+        opacity: 1;
+      }
+    }
+    .card_2 {
+      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/blog-post-92486644.jpg");
+      &:hover .card_back_2 {
+        opacity: 1;
+      }
+    }
+    .card_3 {
+      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/blog-post-332773904.jpg");
+      &:hover .card_back_3 {
+        opacity: 1;
+      }
+    }
+    .card_back {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      bottom: 0%;
+      right: 0%;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      background-color: rgba(253, 207, 61, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: .2s ease;
+      .back_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        h4 {
+          color: white;
+          margin: 10px 0px;
+          text-align: center;
+        }
+        h5 {
+          color: white;
+        }
+      }
+      .icons {
+        i {
+          padding: 10px;
+          background-color: white;
+          border-radius: 50%;
+          color: $yellowColor;
+        }
+      }
+    }
+  }
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover {
+      background-color: $yellowColor;
+
+    }
   }
 }
 
