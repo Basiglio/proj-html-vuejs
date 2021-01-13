@@ -63,6 +63,9 @@ footer {
             }
             a {
               color: #5C5C5C;
+              &:hover {
+                color: white;
+              }
             }
           }
         }

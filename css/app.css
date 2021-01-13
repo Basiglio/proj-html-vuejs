@@ -47,7 +47,6 @@ header #jumbotron {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-slider-62528242.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -133,7 +132,6 @@ header #header_bot h2 {
 
 .section {
   width: 100%;
-  border: 1px solid black;
 }
 
 #section_1 {
@@ -247,7 +245,7 @@ header #header_bot h2 {
 
 #section_2 {
   height: 585px;
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-244125289.jpg");
+  background-image: url(/images/home-244125289.webp?c5c32a97525b26e0a7125e24a9f8385f);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -801,6 +799,9 @@ footer .wrapper_90 #footer_top .column_3 ul li i {
 }
 footer .wrapper_90 #footer_top .column_3 ul li a {
   color: #5C5C5C;
+}
+footer .wrapper_90 #footer_top .column_3 ul li a:hover {
+  color: white;
 }
 footer .wrapper_90 #footer_top .column_4 {
   padding-left: 30px;

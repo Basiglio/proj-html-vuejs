@@ -19,16 +19,16 @@
         <div class="wrapper_90">
           <div id="header_top">
             <div class="home_img">
-              <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2017/04/construction_logo_retina.png" alt="home_logo">
+              <img src="img/construction_logo_retina.webp" alt="home_logo">
             </div>
             <div id="navbar">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#" class="btn yellow_btn">Get Quote</a></li>
+                <li><a :href="home">Home</a></li>
+                <li><a :href="about">About</a></li>
+                <li><a :href="services">Services</a></li>
+                <li><a :href="work">Work</a></li>
+                <li><a :href="articles">Articles</a></li>
+                <li><a :href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">Get Quote</a></li>
               </ul>
             </div>
           </div>
@@ -39,8 +39,8 @@
             <h1>Bulding Inspiring Spaces</h1>
             <h2>We Build Inspiring Residential & Commercial Spaces</h2>
             <ul>
-              <li><a href="#" class="btn black_btn">Explore Recent Work</a></li>
-              <li><a href="#" class="btn yellow_btn">Get a quote today</a></li>
+              <li><a v-bind:href="recentWorkButton" class="btn black_btn">Explore Recent Work</a></li>
+              <li><a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">Get a quote today</a></li>
             </ul>
           </div>
         </div>
@@ -71,7 +71,7 @@
                     <h2>Artefully Crafted</h2>
                     <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
                     </p>
-                    <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+                    <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@
                     <h2>Freshly new</h2>
                     <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
                     </p>
-                    <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+                    <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
                   </div>
                 </div>
               </div>
@@ -103,7 +103,7 @@
                     <h2>Perfect lines</h2>
                     <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
                     </p>
-                    <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+                    <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@
                     <h2>Planning</h2>
                     <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
                     </p>
-                    <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+                    <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
                   </div>
                 </div>
               </div>
@@ -197,7 +197,7 @@
             </div>
           </div>
         </div>
-        <h3><a href="#" class="btn">View All Projects</a></h3>
+        <h3><a :href="recentWorkButtons" class="btn">View All Projects</a></h3>
       </section>
       <section class="section" id="section_4">
         <div class="top_section_4">
@@ -240,7 +240,7 @@
         <div class="carousel_container">
           <h2>Our Home Owners Say</h2>
           <hr>
-          <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-testimonial-113165296.jpg" alt="">
+          <img src="img/home-testimonial.webp" alt="">
           <p>“Many novice real estate investors soon quit the profession and invest. When you invest in real estate, you often see a side of humanity that stocks, bonds, mutual funds, and saving money shelter you from.”</p>
           <h2>HARRY SMITH • NEW HOME OWNER</h2>
           <div class="carousel_circle">
@@ -322,7 +322,7 @@
             </div>
           </div>
         </div>
-        <h3><a href="#" class="btn">View All Articles</a></h3>
+        <h3><a href="articles" class="btn">View All Articles</a></h3>
       </section>
       <section class="section" id="section_7">
         <div class="top_section_7">
@@ -333,19 +333,19 @@
         <div class="bot_section_7">
           <div class="partners">
             <div class="partner_logo">
-              <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-logo9-219096700-320x202.png" alt="">
+              <img src="img/home-logo9-219096700.webp" alt="">
             </div>
             <div class="partner_logo">
-              <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-logo10-219096700-320x202.png" alt="">
+              <img src="img/home-logo10-219096700.webp" alt="">
             </div>
             <div class="partner_logo">
-              <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-logo1-219096700-320x202.png" alt="">
+              <img src="img/home-logo1-219096700.webp" alt="">
             </div>
             <div class="partner_logo">
-              <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-logo9-219096700-320x202.png" alt="">
+              <img src="img/home-logo9-219096700.webp" alt="">
             </div>
             <div class="partner_logo">
-              <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-logo2-219096700-320x202.png" alt="">
+              <img src="img/home-logo2-219096700.webp" alt="">
             </div>
         </div>
       </section>
@@ -357,7 +357,7 @@
             <p>Vivamus sed consectetur tellus dolor sit amet, consectetur adipiscing lorem elit sadip ipsum ets ficilis uns.</p>
           </div>
           <div class="right_section_8">
-            <a href="#"class="btn">get a free quote</a>
+            <a v-bind:href="getQuoteButtons" class="btn getQuoteButtons">get a free quote</a>
             <p>Only takes a few seconds!</p>
           </div>
         </div>
@@ -370,9 +370,9 @@
             <div id="footer_top">
               <div class="column column_1">
                 <div class="content_column">
-                  <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2017/02/footer-logo.png" alt="footer_logo">
+                  <img src="img/footer-logo.webp" alt="footer_logo">
                   <p>We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>
-                  <a href="#" class="btn">Learn more</a>
+                  <a :href="learnMore" class="btn">Learn more</a>
                 </div>
               </div>
               <div class="column column_2">
@@ -387,7 +387,7 @@
                   <li><i class="fas fa-globe"></i>Corporate Location 1600 Amphitheatre Parkway London WC1 1BA</li>
                   <li><i class="fas fa-home"></i></i>Residential Location 9521 Broadsberry Avenue Paddington RC7 9ZA</li>
                   <li><i class="fas fa-phone-alt"></i></i>1.800.458.556 / 1.800.532.2112</li>
-                  <li><i class="fas fa-envelope"></i><a href="#">info@your-domain.com</a></li>
+                  <li><i class="fas fa-envelope"></i><a href="mailto:info@your-domain.com">info@your-domain.com</a></li>
                   <li><i class="fas fa-clock"></i>Monday - Friday: 9:00 AM - 6:00 PM</li>
                   <li><i class="fas fa-clock"></i>Saturday - Sunday: 9:00 AM - 12:00 PM</li>
                 </ul>
@@ -395,7 +395,7 @@
               <div class="column column_4">
                 <h3>Find Us</h3>
                 <div class="static_map">
-                  <img src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&language=en&center=Notting+Hill,London&maptype=terrain&zoom=14&size=328x275&markers=icon:https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2017/03/construction_map_pin.png|Notting+Hill,London&scale=2" alt="statimap">
+                  <img src="img/staticmap.png" alt="statimap">
                 </div>
               </div>
             </div>

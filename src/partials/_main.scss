@@ -1,6 +1,5 @@
 .section {
   width: 100%;
-  border: $debugBorder;
 }
 
 #section_1 {
@@ -95,7 +94,7 @@
 
 #section_2 {
   height: 585px;
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-244125289.jpg");
+  background-image: url("../../img/home-244125289.webp");
   display: flex;
   justify-content: center;
   align-items: center;
