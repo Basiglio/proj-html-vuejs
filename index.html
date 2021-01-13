@@ -7,214 +7,315 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- CDN FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- MY CSS -->
     <link rel="stylesheet" href="css/app.css">
     <title>Avada Construction</title>
   </head>
   <body>
-    <header>
-      <div class="wrapper_90">
-        <div id="header_top">
-          <div class="home_img">
-            <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2017/04/construction_logo_retina.png" alt="home_logo">
+    <span id="app">
+      <header>
+        <div class="wrapper_90">
+          <div id="header_top">
+            <div class="home_img">
+              <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2017/04/construction_logo_retina.png" alt="home_logo">
+            </div>
+            <div id="navbar">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#" class="btn yellow_btn">Get Quote</a></li>
+              </ul>
+            </div>
           </div>
-          <div id="navbar">
+        </div>
+
+        <div id="jumbotron">
+          <div class="jumbotron_core">
+            <h1>Bulding Inspiring Spaces</h1>
+            <h2>We Build Inspiring Residential & Commercial Spaces</h2>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Articles</a></li>
-              <li><a href="#" class="btn yellow_btn">Get Quote</a></li>
+              <li><a href="#" class="btn black_btn">Explore Recent Work</a></li>
+              <li><a href="#" class="btn yellow_btn">Get a quote today</a></li>
             </ul>
           </div>
         </div>
-      </div>
-
-      <div id="jumbotron">
-        <div class="jumbotron_core">
-          <h1>Bulding Inspiring Spaces</h1>
-          <h2>We Build Inspiring Residential & Commercial Spaces</h2>
-          <ul>
-            <li><a href="#" class="btn black_btn">Explore Recent Work</a></li>
-            <li><a href="#" class="btn yellow_btn">Get a quote today</a></li>
-          </ul>
+        <div id="header_bot">
+          <h2>Do You Have A Construction Project We Can Help With?</h2>
         </div>
-      </div>
-      <div id="header_bot">
-        <h2>Do You Have A Construction Project We Can Help With?</h2>
-      </div>
-    </header>
+      </header>
 
-    <main>
-    <section>
-      <div id="section_1">
-        <div class="top_section_1">
-          <h2>Specialists In Modern Construction</h2>
+      <main>
+      <section>
+        <div id="section_1">
+          <div class="top_section_1">
+            <h2>Specialists In Modern Construction</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua ut enim ad minim veniam.
+            </p>
+          </div>
+          <div class="wrapper_80">
+            <div class="bot_section_1">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <i class="far fa-building"></i>
+                    <h2>Buildings</h2>
+                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Artefully Crafted</h2>
+                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
+                    </p>
+                    <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <i class="fas fa-recycle"></i>
+                    <h2>Renovate</h2>
+                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Freshly new</h2>
+                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
+                    </p>
+                    <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <i class="fas fa-home"></i>
+                    <h2>Construct</h2>
+                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Perfect lines</h2>
+                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
+                    </p>
+                    <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <i class="fas fa-truck"></i>
+                    <h2>Exclusive</h2>
+                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Planning</h2>
+                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
+                    </p>
+                    <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="section_2">
+        <div class="container_center">
+          <div class="container_litte">
+            <i class="fas fa-suitcase"></i>
+            <h2>3534</h2>
+            <p>Planning Application</p>
+          </div>
+          <div class="container_litte">
+            <i class="fas fa-building"></i>
+            <h2>896</h2>
+            <p>completed projects</p>
+          </div>
+          <div class="container_litte">
+            <i class="fas fa-users"></i>
+            <h2>172</h2>
+            <p>trained professional</p>
+          </div>
+          <div class="container_litte">
+            <i class="fas fa-globe"></i>
+            <h2>19</h2>
+            <p>international offices</p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="section_3">
+        <div class="top_section_3">
+          <h2>Explore Recent Work</h2>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua ut enim ad minim veniam.
-          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
-        <div class="wrapper_80">
-          <div class="bot_section_1">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <i class="far fa-building"></i>
-                  <h2>Buildings</h2>
-                  <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                </div>
-                <div class="flip-card-back">
-                  <h2>Artefully Crafted</h2>
-                  <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
-                  </p>
-                  <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+        <div class="bot_section_3">
+          <div class="container">
+            <div class="card card_1">
+              <div class="card_back card_back_1">
+                <div class="back_container">
+                  <div class="icons">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h4>Florida Healt Facility</h4>
+                  <h5>Commercial</h5>
                 </div>
               </div>
             </div>
-
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <i class="fas fa-recycle"></i>
-                  <h2>Renovate</h2>
-                  <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                </div>
-                <div class="flip-card-back">
-                  <h2>Freshly new</h2>
-                  <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
-                  </p>
-                  <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+            <div class="card card_2">
+              <div class="card_back card_back_2">
+                <div class="back_container">
+                  <div class="icons">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h4>Maine Modernity</h4>
+                  <h5>Residential</h5>
                 </div>
               </div>
             </div>
-
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <i class="fas fa-home"></i>
-                  <h2>Construct</h2>
-                  <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                </div>
-                <div class="flip-card-back">
-                  <h2>Perfect lines</h2>
-                  <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
-                  </p>
-                  <a href="#" class="btn yellow_btn">GET A QUOTE</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <i class="fas fa-truck"></i>
-                  <h2>Exclusive</h2>
-                  <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                </div>
-                <div class="flip-card-back">
-                  <h2>Planning</h2>
-                  <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
-                  </p>
-                  <a href="#" class="btn yellow_btn">GET A QUOTE</a>
+            <div class="card card_3">
+              <div class="card_back card_back_3">
+                <div class="back_container">
+                  <div class="icons">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h4>Exclusive Urban Living</h4>
+                  <h5>Commercial</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section" id="section_2">
-      <div class="container_center">
-        <div class="container_litte">
-          <i class="fas fa-suitcase"></i>
-          <h2>3534</h2>
-          <p>Planning Application</p>
-        </div>
-        <div class="container_litte">
-          <i class="fas fa-building"></i>
-          <h2>896</h2>
-          <p>completed projects</p>
-        </div>
-        <div class="container_litte">
-          <i class="fas fa-users"></i>
-          <h2>172</h2>
-          <p>trained professional</p>
-        </div>
-        <div class="container_litte">
-          <i class="fas fa-globe"></i>
-          <h2>19</h2>
-          <p>international offices</p>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="section_3">
-      <div class="top_section_3">
-        <h2>Explore Recent Work</h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-      <div class="bot_section_3">
-        <div class="container">
-          <div class="card card_1">
-            <div class="card_back card_back_1">
-              <div class="back_container">
-                <div class="icons">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                </div>
-                <h4>Florida Healt Facility</h4>
-                <h5>Commercial</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card card_2">
-            <div class="card_back card_back_2">
-              <div class="back_container">
-                <div class="icons">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                </div>
-                <h4>Maine Modernity</h4>
-                <h5>Residential</h5>
-              </div>
-            </div>
-          </div>
-          <div class="card card_3">
-            <div class="card_back card_back_3">
-              <div class="back_container">
-                <div class="icons">
-                  <i class="fas fa-link"></i>
-                  <i class="fas fa-search"></i>
-                </div>
-                <h4>Exclusive Urban Living</h4>
-                <h5>Commercial</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h3>View All Projects</h3>
-    </section>
-    <section class="section" id="section_4"></section>
-    <section class="section" id="section_5"></section>
-    <section class="section" id="section_6"></section>
-    <section class="section" id="section_7"></section>
-    <section class="section" id="section_8"></section>
-
-    </main>
-
-    <footer>
-      <section>
-       <div id="footer_top">
-
-       </div>
+        <h3><a href="#" class="btn">View All Projects</a></h3>
       </section>
-      <section>
-        <div id="footer_bot">
-
+      <section class="section" id="section_4">
+        <div class="top_section_4">
+          <h2>Our Core Values</h2>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        <div class="bot_section_4">
+          <div class="container_center">
+            <div class="container_litte">
+              <span>
+                <i class="fas fa-home" id="green"></i>
+                <h4>Great Services</h4>
+              </span>
+              <hr>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>
+            </div>
+            <div class="container_litte">
+              <i class="fas fa-home" id="blue"></i>
+              <h4 class="yellow_hover">Highest Standards</h4>
+              <hr>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>
+            </div>
+            <div class="container_litte">
+              <i class="fas fa-home" id="orange"></i>
+              <h4>Professional Team</h4>
+              <hr>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>
+            </div>
+            <div class="container_litte">
+              <i class="fas fa-home" id="lightgreen"></i>
+              <h4>Creative Solutions</h4>
+              <hr>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>
+            </div>
+          </div>
         </div>
       </section>
-    </footer>
+      <section class="section" id="section_5">
+        <div class="carousel_container">
+          <h2>Our Home Owners Say</h2>
+          <hr>
+          <img src="https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-testimonial-113165296.jpg" alt="">
+          <p>“Many novice real estate investors soon quit the profession and invest. When you invest in real estate, you often see a side of humanity that stocks, bonds, mutual funds, and saving money shelter you from.”</p>
+          <h2>HARRY SMITH • NEW HOME OWNER</h2>
+          <div class="carousel_circle">
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="section_6">
+        <div class="top_section_6">
+          <h2>Explore Recent Work</h2>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        <div class="bot_section_6">
+          <div class="container">
+            <div class="card card_1">
+              <div class="card_back card_back_1">
+                <div class="back_container">
+                  <div class="icons">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h4>Florida Healt Facility</h4>
+                  <h5>Commercial</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card card_2">
+              <div class="card_back card_back_2">
+                <div class="back_container">
+                  <div class="icons">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h4>Maine Modernity</h4>
+                  <h5>Residential</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card card_3">
+              <div class="card_back card_back_3">
+                <div class="back_container">
+                  <div class="icons">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h4>Exclusive Urban Living</h4>
+                  <h5>Commercial</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="section_7"></section>
+      <section class="section" id="section_8"></section>
+
+      </main>
+
+      <footer>
+        <section>
+         <div id="footer_top">
+         </div>
+        </section>
+        <section>
+          <div id="footer_bot">
+          </div>
+        </section>
+      </footer>
+    </span>
+   <script src="js/myscript.js" charset="utf-8"></script>
   </body>
 </html>

@@ -7,12 +7,7 @@
   height: 780px;
   width: 100%;
   .top_section_1 {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include topSection;
     h2 {
       padding: 10px 0;
     }
@@ -135,115 +130,148 @@
 #section_3 {
   height: 890px;
   .top_section_3 {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    h2 {
-
-    }
-    hr {
-      margin: 30px 0;
-      border: 2px solid $yellowColor;
-      width: 250px;
-    }
-    p {
-      text-align: center;
-      line-height: 30px;
-    }
+    @include topSection;
   }
   .bot_section_3 {
-    width: 100%;
-    height: calc(85% - 300px);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    .container {
-      width: 1160px;
-      height: 369px;
-      display: flex;
-      justify-content: space-around;
-    }
-    .card {
-      width: 30%;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-    }
-    .card_1 {
-      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project2-featured-15013609.jpg");
-      &:hover .card_back_1 {
-        display: block;
-      }
-    }
-    .card_2 {
-      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project1-featured-294276386.jpg");
-      &:hover .card_back_2 {
-        display: block;
-      }
-    }
-    .card_3 {
-      background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project3-featured-189023420.jpg");
-      &:hover .card_back_3 {
-        display: block;
-      }
-    }
-    .card_back {
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(253, 207, 61, 1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      display: none;
-      .back_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        h4 {
-          color: white;
-          margin: 10px 0px;
-        }
-        h5 {
-          color: white;
-        }
-      }
-      .icons {
-        i {
-          padding: 10px;
-          background-color: white;
-          border-radius: 50%;
-          color: $yellowColor;
-        }
-      }
-    }
+    @include botSection;
   }
+  
   h3 {
     text-align: center;
     text-transform: uppercase;
+    padding: 10px 50px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover {
+      background-color: $yellowColor;
+
+    }
   }
 }
 
 #section_4 {
   height: 735px;
+  background-color: #F5F5F5;
+  .top_section_4 {
+    @include topSection;
+  }
+  .bot_section_4 {
+    width: 100%;
+    height: calc(100% - 300px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .container_center {
+      width: 1170px;
+      height: 400px;
+      display: flex;
+      .container_litte {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        i {
+          font-size: 55px;
+          padding: 30px;
+          border-radius: 50%;
+          color: white;
+        }
+        #green{
+          background-color: #4ea4a5;
+          &:hover {
+            background-color: $yellowColor;
+          }
+        }
+        #blue{
+          background-color: #4e6da5;
+          &:hover {
+            background-color: $yellowColor;
+          }
+        }
+        #orange{
+          background-color: #f6722a;
+          &:hover {
+            background-color: $yellowColor;
+          }
+        }
+        #lightgreen{
+          background-color: #a7cf47;
+          &:hover {
+            background-color: $yellowColor;
+          }
+        }
+        h4 {
+          margin: 10px 0px;
+        }
+        hr {
+          margin: 10px 0px;
+          width: 100px;
+        }
+        p {
+          line-height: 25px;
+        }
+      }
+    }
+  }
 }
 
 #section_5 {
   height: 780px;
+  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-parallax-144609983.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .carousel_container {
+    width: 850px;
+    height: 550px;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 5px 30px;
+    h2 {
+      margin: 25px 0;
+      font-size: 30px;
+      color: white;
+    }
+    img {
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+    hr {
+      margin: 20px 0;
+      border: 1px solid $yellowColor;
+      width: 250px;
+    }
+    p {
+      text-align: center;
+      line-height: 30px;
+      color: white;
+    }
+    .carousel_circle {
+      display: flex;
+      margin-top: 5px;
+      i {
+        padding: 0 10px;
+        color: white;
+      }
+    }
+  }
 }
 
 #section_6 {
   height: 1120px;
+  .top_section_6 {
+    @include topSection;
+  }
+  .bot_section_6 {
+    @include botSection;
+  }
 }
 
 #section_7 {
