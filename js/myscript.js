@@ -1,6 +1,7 @@
 var app = new Vue({
   el: '#app',
   data: {
+
     // WEB URL
     // header navbar
     home: "#",
@@ -14,11 +15,8 @@ var app = new Vue({
     // footer
     learnMore: "https://avada.theme-fusion.com/construction/about/",
 
-
-
-    // card array section one
-    cards:
-    [
+    // cards array section one
+    cards: [
       {
         // cardfront
         icon: "far fa-building",
@@ -60,5 +58,30 @@ var app = new Vue({
         button: "https://avada.theme-fusion.com/construction/get-quote/",
       },
     ],
+    // counter section two
+    counters: [
+      {
+        icon: "fas fa-suitcase",
+        counter: 3534,
+        title: "Planning Application",
+      },
+      {
+        icon: "fas fa-building",
+        counter: 896,
+        title: "completed projects",
+      },
+      {
+        icon: "fas fa-users",
+        counter: 172,
+        title: "trained professional",
+      },
+      {
+        icon: "fas fa-globe",
+        counter: 19,
+        title: "international offices",
+      },
+    ],
+  },
+  methods: {
   },
 })

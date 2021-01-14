@@ -106,25 +106,10 @@
       <!-- SECTION TWO -->
       <section class="section" id="section_2">
         <div class="container_center">
-          <div class="container_litte">
-            <i class="fas fa-suitcase"></i>
-            <h2>3534</h2>
-            <p>Planning Application</p>
-          </div>
-          <div class="container_litte">
-            <i class="fas fa-building"></i>
-            <h2>896</h2>
-            <p>completed projects</p>
-          </div>
-          <div class="container_litte">
-            <i class="fas fa-users"></i>
-            <h2>172</h2>
-            <p>trained professional</p>
-          </div>
-          <div class="container_litte">
-            <i class="fas fa-globe"></i>
-            <h2>19</h2>
-            <p>international offices</p>
+          <div class="container_litte" v-for="counter in counters">
+            <i :class="counter.icon"></i>
+            <h2>{{counter.counter}}</h2>
+            <p>{{counter.title}}</p>
           </div>
         </div>
       </section>
