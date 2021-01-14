@@ -106,7 +106,9 @@
 
 #section_2 {
   height: 585px;
+  width: 100%;
   background-image: url("../img/home-244125289.webp");
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,6 +309,7 @@
 #section_5 {
   height: 780px;
   background-image: url("../img/home-parallax-144609983.webp");
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
