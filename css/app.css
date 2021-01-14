@@ -198,10 +198,19 @@ header #header_bot a:hover {
   position: relative;
   perspective: 1000px;
 }
-#section_1 .bot_section_1 .flip-card i {
-  padding: 15px;
-  border: 1px solid black;
+#section_1 .bot_section_1 .flip-card span {
+  border: 1px solid grey;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section_1 .bot_section_1 .flip-card span i {
+  font-size: 40px;
+  padding: 15px;
+  color: grey;
 }
 #section_1 .bot_section_1 .flip-card h2 {
   margin: 15px 0;
@@ -256,6 +265,9 @@ header #header_bot a:hover {
 .flip-card-back .yellow_btn:hover {
   background-color: black;
   color: white;
+}
+.flip-card-back h2 {
+  text-transform: uppercase;
 }
 
 #section_2 {

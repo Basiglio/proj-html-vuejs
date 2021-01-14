@@ -30,10 +30,19 @@
     align-items: flex-start;
     .flip-card {
       @include box;
-      i {
-        padding: 15px;
-        border: 1px solid black;
+      span {
+        border: 1px solid grey;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: 40px;
+          padding: 15px;
+          color: grey;
+        }
       }
       h2 {
         margin: 15px 0;
@@ -89,6 +98,9 @@
       background-color: black;
       color: white;
     }
+  }
+  h2 {
+    text-transform: uppercase;
   }
 }
 

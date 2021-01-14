@@ -14,13 +14,18 @@
     <title>Avada Construction</title>
   </head>
   <body>
+    <!-- VUE APP -->
     <span id="app">
       <header>
         <div class="wrapper_90">
+          <!-- HEADER TOP -->
           <div id="header_top">
             <div class="home_img">
               <img src="img/construction_logo_retina.webp" alt="home_logo">
             </div>
+            <!-- /HEADER TOP -->
+
+            <!-- NAVBAR -->
             <div id="navbar">
               <ul>
                 <li><a :href="home">Home</a></li>
@@ -33,14 +38,16 @@
             </div>
           </div>
         </div>
+        <!-- /NAVBAR -->
 
+        <!-- JUMBOTRON -->
         <div id="jumbotron">
           <div class="jumbotron_core">
             <h1>Bulding Inspiring Spaces</h1>
             <h2>We Build Inspiring Residential & Commercial Spaces</h2>
             <ul>
               <li>
-                <a v-bind:href="recentWorkButtons" class="btn black_btn recentWorkButtons">Get a quote today</a>
+                <a v-bind:href="recentWorkButtons" class="btn black_btn recentWorkButtons">Explore recent work</a>
               </li>
               <li>
                 <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">Get a quote today</a>
@@ -48,83 +55,45 @@
             </ul>
           </div>
         </div>
+        <!-- /JUMBOTRON -->
+
+        <!-- HEADER BOTTOM -->
         <div id="header_bot">
           <h2>Do You Have A Construction Project We Can Help With?</h2>
           <a :href="getQuoteButtons" class="btn getQuoteButtons">get a free quote</a>
         </div>
+        <!-- /HEADER BOTTOM -->
       </header>
 
+
       <main>
+        <!-- SECTION ONE -->
       <section>
         <div id="section_1">
+          <!-- TOP SECTION ONE -->
           <div class="top_section_1">
             <h2>Specialists In Modern Construction</h2>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua ut enim ad minim veniam.
             </p>
           </div>
+        <!-- /TOP SECTION ONE -->
+
+        <!-- BOTTOM SECTION ONE -->
           <div class="wrapper_80">
             <div class="bot_section_1">
-              <div class="flip-card">
+              <div class="flip-card" v-for="card in cards">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <i class="far fa-building"></i>
-                    <h2>Buildings</h2>
-                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                    <span><i :class="card.icon"></i></span>
+                    <h2>{{card.title}}</h2>
+                    <p>{{card.paragraph}}</p>
                   </div>
                   <div class="flip-card-back">
-                    <h2>Artefully Crafted</h2>
-                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
+                    <h2>{{card.titleBack}}</h2>
+                    <p>{{card.paragraphBack}}
                     </p>
-                    <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <i class="fas fa-recycle"></i>
-                    <h2>Renovate</h2>
-                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                  </div>
-                  <div class="flip-card-back">
-                    <h2>Freshly new</h2>
-                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
-                    </p>
-                    <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <i class="fas fa-home"></i>
-                    <h2>Construct</h2>
-                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                  </div>
-                  <div class="flip-card-back">
-                    <h2>Perfect lines</h2>
-                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
-                    </p>
-                    <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <i class="fas fa-truck"></i>
-                    <h2>Exclusive</h2>
-                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                  </div>
-                  <div class="flip-card-back">
-                    <h2>Planning</h2>
-                    <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.
-                    </p>
-                    <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
+                    <a :href="card.button" class="btn yellow_btn getQuoteButtons">GET A QUOTE</a>
                   </div>
                 </div>
               </div>
@@ -132,6 +101,9 @@
           </div>
         </div>
       </section>
+      <!-- SECTION ONE -->
+
+      <!-- SECTION TWO -->
       <section class="section" id="section_2">
         <div class="container_center">
           <div class="container_litte">
@@ -156,12 +128,19 @@
           </div>
         </div>
       </section>
+      <!-- /SECTION TWO -->
+
+      <!-- SECTION THREE -->
       <section class="section" id="section_3">
+        <!-- TOP SECTION THREE -->
         <div class="top_section_3">
           <h2>Explore Recent Work</h2>
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
+        <!-- /TOP SECTION THREE -->
+
+        <!-- BOTTOM SECTION THREE -->
         <div class="bot_section_3">
           <div class="container">
             <div class="card card_1">
@@ -203,13 +182,21 @@
           </div>
         </div>
         <h3><a :href="recentWorkButtons" class="btn">View All Projects</a></h3>
+        <!-- /BOTTOM SECTION THREE -->
       </section>
+      <!-- /SECTION THREE -->
+
+      <!-- SECTION FOUR -->
       <section class="section" id="section_4">
+        <!-- TOP SECTION FOUR -->
         <div class="top_section_4">
           <h2>Our Core Values</h2>
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
+        <!-- /TOP SECTION FOUR -->
+
+        <!-- BOTTOM SECTION FOUR -->
         <div class="bot_section_4">
           <div class="container_center">
             <div class="container_litte">
@@ -240,7 +227,11 @@
             </div>
           </div>
         </div>
+        <!-- /BOTTOM SECTION FOUR -->
       </section>
+      <!-- /SECION FOUR -->
+
+      <!-- SECTION FIVE -->
       <section class="section" id="section_5">
         <div class="carousel_container">
           <h2>Our Home Owners Say</h2>
@@ -258,12 +249,19 @@
           </div>
         </div>
       </section>
+      <!-- /SECTION FIVE -->
+
+      <!-- SECTION SIX -->
       <section class="section" id="section_6">
+        <!-- TOP SECTION SIX -->
         <div class="top_section_6">
           <h2>Explore Recent Work</h2>
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
+        <!-- /TOP SECTION SIX -->
+
+        <!-- BOTTOM SECTION SIX -->
         <div class="bot_section_6">
           <div class="container">
             <div class="card card_1">
@@ -328,13 +326,21 @@
           </div>
         </div>
         <h3><a href="articles" class="btn">View All Articles</a></h3>
+        <!-- /BOTTOM SECTION SIX -->
       </section>
+      <!-- /SECTION SIX -->
+
+      <!-- SECTION SEVEN -->
       <section class="section" id="section_7">
+        <!-- TOP SECTION SEVEN -->
         <div class="top_section_7">
           <h2>Trusted Partners</h2>
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
         </div>
+        <!-- /TOP SECTION SEVEN -->
+
+        <!-- BOTTOM SECTION SEVEN -->
         <div class="bot_section_7">
           <div class="partners">
             <div class="partner_logo">
@@ -353,7 +359,11 @@
               <img src="img/home-logo2-219096700.webp" alt="">
             </div>
         </div>
+        <!-- /BOTTOM SECTION SEVEN -->
       </section>
+      <!-- /SECTION SEVEN -->
+
+      <!-- SECTION EIGHT -->
       <section class="section" id="section_8">
         <div class="wrapper_80">
           <div class="left_section_8">
@@ -367,9 +377,11 @@
           </div>
         </div>
       </section>
+      <!-- /SECTION EIGHT -->
       </div>
       </main>
 
+      <!-- FOOTER -->
       <footer>
         <div class="wrapper_90">
             <div id="footer_top">
@@ -415,7 +427,11 @@
             </div>
         </div>
       </footer>
+      <!-- /FOOTER -->
     </span>
+    <!-- /VUE APP -->
+    <!-- MY JS -->
    <script src="js/myscript.js" charset="utf-8"></script>
+    <!-- /MY JS -->
   </body>
 </html>

@@ -15,5 +15,50 @@ var app = new Vue({
     learnMore: "https://avada.theme-fusion.com/construction/about/",
 
 
-  }
+
+    // card array section one
+    cards:
+    [
+      {
+        // cardfront
+        icon: "far fa-building",
+        title: "Buildings",
+        paragraph: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        // cardback
+        titleBack: "Artefully Crafted",
+        paragraphBack: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        button: "https://avada.theme-fusion.com/construction/get-quote/",
+      },
+      {
+        // cardfront
+        icon: "fas fa-recycle",
+        title: "Renovate",
+        paragraph: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        // cardback
+        titleBack: "freshly new",
+        paragraphBack: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        button: "https://avada.theme-fusion.com/construction/get-quote/",
+      },
+      {
+        // cardfront
+        icon: "fas fa-home",
+        title: "Construct",
+        paragraph: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        // cardback
+        titleBack: "perfect lines",
+        paragraphBack: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        button: "https://avada.theme-fusion.com/construction/get-quote/",
+      },
+      {
+        // cardfront
+        icon: "fas fa-truck",
+        title: "Planning",
+        paragraph: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        // cardback
+        titleBack: "exclusive",
+        paragraphBack: "Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        button: "https://avada.theme-fusion.com/construction/get-quote/",
+      },
+    ],
+  },
 })
