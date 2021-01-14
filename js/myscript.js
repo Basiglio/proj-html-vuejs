@@ -3,17 +3,36 @@ var app = new Vue({
   data: {
 
     // WEB URL
-    // header navbar
-    home: "#",
-    about: "https://avada.theme-fusion.com/construction/about/",
-    services: "https://avada.theme-fusion.com/construction/services/",
-    work: "https://avada.theme-fusion.com/construction/work/",
-    articles: "https://avada.theme-fusion.com/construction/construction-articles/",
     // body
     getQuoteButtons: "https://avada.theme-fusion.com/construction/get-quote/",
     recentWorkButtons: "https://avada.theme-fusion.com/construction/work/",
     // footer
     learnMore: "https://avada.theme-fusion.com/construction/about/",
+
+    // header navbar array
+    navbarElements:
+    [
+      {
+        title: "home",
+        link: "#",
+      },
+      {
+        title: "about",
+        link: "https://avada.theme-fusion.com/construction/about/",
+      },
+      {
+        title: "services",
+        link: "https://avada.theme-fusion.com/construction/services/",
+      },
+      {
+        title: "work",
+        link: "https://avada.theme-fusion.com/construction/work/",
+      },
+      {
+        title: "articles",
+        link: "https://avada.theme-fusion.com/construction/construction-articles/",
+      },
+    ],
 
     // cards array section one
     cards: [

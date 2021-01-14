@@ -1,11 +1,11 @@
 #navbar {
-  width: 50%;
+  width: 80%;
   height: 100%;
   ul {
     text-align: right;
     li {
       @include listStyle;
-      padding-left: 30px;
+      padding-left: 40px;
       a {
         text-transform: uppercase;
         @include textDecorationNone;

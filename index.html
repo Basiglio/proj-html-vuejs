@@ -28,11 +28,9 @@
             <!-- NAVBAR -->
             <div id="navbar">
               <ul>
-                <li><a :href="home">Home</a></li>
-                <li><a :href="about">About</a></li>
-                <li><a :href="services">Services</a></li>
-                <li><a :href="work">Work</a></li>
-                <li><a :href="articles">Articles</a></li>
+                <li v-for="element in navbarElements">
+                  <a :href="element.link">{{element.title}}</a>
+                </li>
                 <li><a :href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">Get Quote</a></li>
               </ul>
             </div>
