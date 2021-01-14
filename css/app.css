@@ -47,6 +47,7 @@ header #jumbotron {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/home-slider.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -245,7 +246,7 @@ header #header_bot h2 {
 
 #section_2 {
   height: 585px;
-  background-image: url(/images/home-244125289.webp?c5c32a97525b26e0a7125e24a9f8385f);
+  background-image: url("../img/home-244125289.webp");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,19 +319,19 @@ header #header_bot h2 {
   position: relative;
 }
 #section_3 .bot_section_3 .card_1 {
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project2-featured-15013609.jpg");
+  background-image: url("../img/project2-featured-15013609.webp");
 }
 #section_3 .bot_section_3 .card_1:hover .card_back_1 {
   opacity: 1;
 }
 #section_3 .bot_section_3 .card_2 {
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project1-featured-294276386.jpg");
+  background-image: url("../img/project1-featured-294276386.webp");
 }
 #section_3 .bot_section_3 .card_2:hover .card_back_2 {
   opacity: 1;
 }
 #section_3 .bot_section_3 .card_3 {
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/project3-featured-189023420.jpg");
+  background-image: url("../img/project3-featured-189023420.webp");
 }
 #section_3 .bot_section_3 .card_3:hover .card_back_3 {
   opacity: 1;
@@ -470,7 +471,7 @@ header #header_bot h2 {
 
 #section_5 {
   height: 780px;
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-parallax-144609983.jpg");
+  background-image: url("../img/home-parallax-144609983.webp");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -573,19 +574,19 @@ header #header_bot h2 {
   line-height: 30px;
 }
 #section_6 .bot_section_6 .card_1 {
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/blog-post-134132600.jpg");
+  background-image: url("../img/blog-post-134132600.webp");
 }
 #section_6 .bot_section_6 .card_1:hover .card_back_1 {
   opacity: 1;
 }
 #section_6 .bot_section_6 .card_2 {
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/blog-post-92486644.jpg");
+  background-image: url("../img/blog-post-92486644.webp");
 }
 #section_6 .bot_section_6 .card_2:hover .card_back_2 {
   opacity: 1;
 }
 #section_6 .bot_section_6 .card_3 {
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/blog-post-332773904.jpg");
+  background-image: url("../img/blog-post-332773904.webp");
 }
 #section_6 .bot_section_6 .card_3:hover .card_back_3 {
   opacity: 1;
@@ -685,7 +686,7 @@ header #header_bot h2 {
 #section_8 {
   height: 430px;
   width: 100%;
-  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/about-call-to-action-57862405.jpg");
+  background-image: url("../img/about-call-to-action-57862405.webp");
   background-position: center;
   background-size: cover;
 }

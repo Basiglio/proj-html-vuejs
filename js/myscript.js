@@ -1,6 +1,7 @@
 var app = new Vue({
   el: '#app',
   data: {
+    // WEB URL
     // header navbar
     home: "#",
     about: "https://avada.theme-fusion.com/construction/about/",
@@ -12,5 +13,7 @@ var app = new Vue({
     recentWorkButtons: "https://avada.theme-fusion.com/construction/work/",
     // footer
     learnMore: "https://avada.theme-fusion.com/construction/about/",
+
+
   }
 })
