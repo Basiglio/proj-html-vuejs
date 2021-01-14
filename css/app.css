@@ -99,6 +99,20 @@ header #header_bot {
 header #header_bot h2 {
   font-size: 35px;
 }
+header #header_bot a {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 13px 60px;
+  position: relative;
+  bottom: 50%;
+}
+header #header_bot a:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
 
 #navbar {
   width: 50%;

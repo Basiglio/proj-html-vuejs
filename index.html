@@ -39,13 +39,18 @@
             <h1>Bulding Inspiring Spaces</h1>
             <h2>We Build Inspiring Residential & Commercial Spaces</h2>
             <ul>
-              <li><a v-bind:href="recentWorkButton" class="btn black_btn">Explore Recent Work</a></li>
-              <li><a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">Get a quote today</a></li>
+              <li>
+                <a v-bind:href="recentWorkButtons" class="btn black_btn recentWorkButtons">Get a quote today</a>
+              </li>
+              <li>
+                <a v-bind:href="getQuoteButtons" class="btn yellow_btn getQuoteButtons">Get a quote today</a>
+              </li>
             </ul>
           </div>
         </div>
         <div id="header_bot">
           <h2>Do You Have A Construction Project We Can Help With?</h2>
+          <a :href="getQuoteButtons" class="btn getQuoteButtons">get a free quote</a>
         </div>
       </header>
 

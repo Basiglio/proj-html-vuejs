@@ -74,5 +74,11 @@ header {
     h2 {
       font-size: 35px;
     }
+    a {
+      @include blackButtonToWhite;
+      padding: 13px 60px;
+      position: relative;
+      bottom: 50%;
+    }
   }
 }

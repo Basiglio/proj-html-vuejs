@@ -28,6 +28,18 @@
   }
 }
 
+@mixin blackButtonToWhite {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid white;
+  &:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  }
+}
+
 
 @mixin box {
   width: 310px;
