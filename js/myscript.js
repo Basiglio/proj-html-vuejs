@@ -102,12 +102,113 @@ var app = new Vue({
         title: "international offices",
       },
     ],
+    // section three
+    recentWork: [
+      {
+        firstIcon: "fas fa-link",
+        secondIcon: "fas fa-search",
+        title: "Florida Healt Facility",
+        subTitle: "Commercial",
+        imgClassFront: "card card_1",
+        classCardBack: "card_back card_back_1",
+        // img is in css background
+      },
+      {
+        firstIcon: "fas fa-link",
+        secondIcon: "fas fa-search",
+        title: "Maine Modernity",
+        subTitle: "Residential",
+        imgClassFront: "card card_2",
+        classCardBack: "card_back card_back_2",
+        // img is in css background
+      },
+      {
+        firstIcon: "fas fa-link",
+        secondIcon: "fas fa-search",
+        title: "Exclusive Urban Living",
+        subTitle: "Commercial",
+        imgClassFront: "card card_3",
+        classCardBack: "card_back card_back_3",
+        // img is in css background
+      },
+    ],
+    // section four
+    coreValues: [
+      {
+        icon: "fas fa-home",
+        iconId: "green",
+        title: "Great Services",
+        paragraph: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia",
+      },
+      {
+        icon: "fas fa-home",
+        iconId: "blue",
+        title: "Highest Standards",
+        paragraph: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia",
+      },
+      {
+        icon: "fas fa-home",
+        iconId: "orange",
+        title: "Professional Team",
+        paragraph: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia",
+      },
+      {
+        icon: "fas fa-home",
+        iconId: "lightgreen",
+        title: "Creative Solutions",
+        paragraph: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia",
+      },
+    ],
+    // section five
+    latestNewsTop: [
+      {
+        classContainer: "card card_1",
+        classBackContainer: "card_back card_back_1",
+        firstIcon: "fas fa-link",
+        secondIcon: "fas fa-search",
+        title: "Redeveloping Florida’s Remote Southern Coast",
+        subTitle: "Architecture, Buildings, Construction, News",
+      },
+      {
+        classContainer: "card card_2",
+        classBackContainer: "card_back card_back_2",
+        firstIcon: "fas fa-link",
+        secondIcon: "fas fa-search",
+        title: "How We Manage Large Construction Projects",
+        subTitle: "Architecture, Buildings, Construction, News",
+      },
+      {
+        classContainer: "card card_3",
+        classBackContainer: "card_back card_back_3",
+        firstIcon: "fas fa-link",
+        secondIcon: "fas fa-search",
+        title: "Future proofing a modern home",
+        subTitle: "Architecture, Buildings, Construction, News",
+      },
+    ],
+    latestNewsBottom: [
+      {
+        classContainer: "card_bottom card_bottom_1",
+        title: "Redeveloping Florida’s Remote Southern Coast",
+        paragraph: "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
+      },
+      {
+        classContainer: "card_bottom card_bottom_2",
+        title: "How We Manage Large Construction Projects",
+        paragraph: "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
+      },
+      {
+        classContainer: "card_bottom card_bottom_3",
+        title: "Future proofing a modern home",
+        paragraph: "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
+      },
+    ],
     // /MAIN
 
     // FOOTER
     infoContacts: [
       {
-        icon: "as fa-globe",
+        icon: "fas fa-globe",
         // CORPORATE LOCATE
         info: "Corporate Location 1600 Amphitheatre Parkway London WC1 1BA"
       },
