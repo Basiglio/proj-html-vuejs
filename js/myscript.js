@@ -206,6 +206,13 @@ var app = new Vue({
     // /MAIN
 
     // FOOTER
+    // FIRST COLUMN
+    imgFooter: "img/footer-logo.webp",
+    paragraphFooter: "We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.",
+    linkFooter: "learnMore",
+    textLinkFooter: "Learn More",
+
+    // THIRD COLUMN CONTACTS
     infoContacts: [
       {
         icon: "fas fa-globe",
@@ -241,6 +248,39 @@ var app = new Vue({
         info: "Saturday - Sunday: 9:00 AM - 12:00 PM"
       },
     ],
+
+
+    // FOOTER BOTTOM
+    copyrightFistPart: "COPYRIGHT 2021 AVADA THEME BY",
+    link: "#",
+    linkText: "THEME FUSION",
+    copyrightSecondPart: "|   ALL RIGHTS RESERVED   |   POWERED BY",
+    poweredByLink: "https://github.com/Basiglio",
+    poweredByName: "emilio furnari",
+
+    socials: [
+      {
+        // FACEBOOK
+        icon: "fab fa-facebook-f",
+        link: "https://it-it.facebook.com/",
+      },
+      {
+        // TWITTER
+        icon: "fab fa-twitter",
+        link: "https://twitter.com/login?lang=it",
+      },
+      {
+        // YOUTUBE
+        icon: "fab fa-youtube",
+        link: "https://www.youtube.com/watch?v=L4fyxCdgcV0",
+      },
+      {
+        // INSTAGRAM
+        icon: "fab fa-instagram",
+        link: "https://www.instagram.com/",
+      },
+    ],
+    // /FOOTER
   },
   methods: {
   },

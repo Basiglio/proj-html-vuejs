@@ -862,6 +862,7 @@ footer .wrapper_90 #footer_bot {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-transform: uppercase;
 }
 footer .wrapper_90 #footer_bot p {
   color: #5C5C5C;

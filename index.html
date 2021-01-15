@@ -291,9 +291,9 @@
             <div id="footer_top">
               <div class="column column_1">
                 <div class="content_column">
-                  <img src="img/footer-logo.webp" alt="footer_logo">
-                  <p>We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.</p>
-                  <a :href="learnMore" class="btn">Learn more</a>
+                  <img :src="imgFooter" alt="footer_logo">
+                  <p>{{paragraphFooter}}</p>
+                  <a :href="linkFooter" class="btn">{{textLinkFooter}}</a>
                 </div>
               </div>
               <div class="column column_2">
@@ -331,12 +331,13 @@
               </div>
             </div>
             <div id="footer_bot">
-              <p>COPYRIGHT 2021 AVADA THEME BY <a href="#">THEME FUSION</a>   |   ALL RIGHTS RESERVED   |   POWERED BY <a href="https://github.com/Basiglio">EMILIO FURNARI</a> </p>
+              <p>{{copyrightFistPart}}
+                <a :href="link">{{linkText}}</a>
+                  {{copyrightSecondPart}}
+                  <a :href="poweredByLink">{{poweredByName}}</a>
+              </p>
               <span>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a v-for="element in socials" :href="element.link"><i :class="element.icon"></i></a>
               </span>
             </div>
         </div>
