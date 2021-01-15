@@ -10,8 +10,7 @@ var app = new Vue({
     learnMore: "https://avada.theme-fusion.com/construction/about/",
 
     // header navbar array
-    navbarElements:
-    [
+    navbarElements:[
       {
         title: "home",
         link: "#",
@@ -33,7 +32,10 @@ var app = new Vue({
         link: "https://avada.theme-fusion.com/construction/construction-articles/",
       },
     ],
+    // /header navbar array
 
+
+    // MAIN
     // cards array section one
     cards: [
       {
@@ -98,6 +100,44 @@ var app = new Vue({
         icon: "fas fa-globe",
         counter: 19,
         title: "international offices",
+      },
+    ],
+    // /MAIN
+
+    // FOOTER
+    infoContacts: [
+      {
+        icon: "as fa-globe",
+        // CORPORATE LOCATE
+        info: "Corporate Location 1600 Amphitheatre Parkway London WC1 1BA"
+      },
+      {
+        icon: "fas fa-home",
+        // RESIDENTIAL LOCATE
+        info: "Residential Location 9521 Broadsberry Avenue Paddington RC7 9ZA"
+      },
+      {
+        icon: "fas fa-phone-alt",
+        // TELEPHONE
+        info: "1.800.458.556 / 1.800.532.2112"
+      },
+      {
+        // EXCEPTION FOR EMAIL
+        icon: "fas fa-envelope",
+        // MAIL TAG A
+        infoMailTo: "info@your-domain.com",
+        // MAIL TO HREF
+        mailTo: "mailto:info@your-domain.com"
+      },
+      {
+        icon: "fas fa-clock",
+        // OPENING TIME WEEK
+        info: "Monday - Friday: 9:00 AM - 6:00 PM"
+      },
+      {
+        icon: "fas fa-clock",
+        // OPENING TIME HOLIDAYS
+        info: "Saturday - Sunday: 9:00 AM - 12:00 PM"
       },
     ],
   },

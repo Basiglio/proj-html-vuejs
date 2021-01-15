@@ -378,19 +378,24 @@
               <div class="column column_2">
                 <h3>Latest Tweet</h3>
                 <div class="content_tweet">
-                  <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">New for 2021 is Avada Accountant <a href="https://t.co/aDCXlL5Pod">https://t.co/aDCXlL5Pod</a> Bright, lightweight, &amp; highly flexible. Whether you are selling products online or providing services, this is the website for your next project. Included with the <a href="https://twitter.com/hashtag/avada?src=hash&amp;ref_src=twsrc%5Etfw">#avada</a> <a href="https://twitter.com/hashtag/WebsiteBuilder?src=hash&amp;ref_src=twsrc%5Etfw">#WebsiteBuilder</a> <a href="https://t.co/wzZfP7rQhI">https://t.co/wzZfP7rQhI</a> <a href="https://twitter.com/hashtag/WordPress?src=hash&amp;ref_src=twsrc%5Etfw">#WordPress</a> <a href="https://t.co/TNd6PWyYNF">pic.twitter.com/TNd6PWyYNF</a></p>&mdash; ThemeFusion (@Theme_Fusion) <a href="https://twitter.com/Theme_Fusion/status/1347593672628588544?ref_src=twsrc%5Etfw">January 8, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">New for 2021 is Avada Accountant <a href="https://t.co/aDCXlL5Pod">https://t.co/aDCXlL5Pod</a> Bright, lightweight, &amp; highly flexible. Whether you are selling products online or providing services, this is the website for your next project. Included with the <a href="https://twitter.com/hashtag/avada?src=hash&amp;ref_src=twsrc%5Etfw">#avada</a> <a href="https://twitter.com/hashtag/WebsiteBuilder?src=hash&amp;ref_src=twsrc%5Etfw">#WebsiteBuilder</a> <a href="https://t.co/wzZfP7rQhI">https://t.co/wzZfP7rQhI</a>
+                  <a href="https://twitter.com/hashtag/WordPress?src=hash&amp;ref_src=twsrc%5Etfw">#WordPress</a> <a href="https://t.co/TNd6PWyYNF">pic.twitter.com/TNd6PWyYNF</a></p>&mdash; ThemeFusion (@Theme_Fusion) <a href="https://twitter.com/Theme_Fusion/status/1347593672628588544?ref_src=twsrc%5Etfw">January 8, 2021</a></blockquote>
                 </div>
               </div>
               <div class="column column_3">
                 <h3>Contact us today</h3>
                 <ul>
-                  <li><i class="fas fa-globe"></i>Corporate Location 1600 Amphitheatre Parkway London WC1 1BA</li>
-                  <li><i class="fas fa-home"></i></i>Residential Location 9521 Broadsberry Avenue Paddington RC7 9ZA</li>
+                  <li v-for="info in infoContacts">
+                    <i :class="info.icon"></i>
+                    <a :href="info.mailTo">{{info.infoMailTo}}</a>
+                   {{info.info}}
+                  </li>
+                  <!-- <li><i class="fas fa-home"></i></i>Residential Location 9521 Broadsberry Avenue Paddington RC7 9ZA</li>
                   <li><i class="fas fa-phone-alt"></i></i>1.800.458.556 / 1.800.532.2112</li>
                   <li><i class="fas fa-envelope"></i><a href="mailto:info@your-domain.com">info@your-domain.com</a></li>
                   <li><i class="fas fa-clock"></i>Monday - Friday: 9:00 AM - 6:00 PM</li>
                   <li><i class="fas fa-clock"></i>Saturday - Sunday: 9:00 AM - 12:00 PM</li>
-                </ul>
+                </ul> -->
               </div>
               <div class="column column_4">
                 <h3>Find Us</h3>
@@ -415,6 +420,8 @@
     <!-- /VUE APP -->
     <!-- MY JS -->
    <script src="js/myscript.js" charset="utf-8"></script>
+   <!-- twitter script -->
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!-- /MY JS -->
   </body>
 </html>

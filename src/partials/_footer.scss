@@ -58,6 +58,7 @@ footer {
             list-style: none;
             margin: 20px 0px;
             color: #5C5C5C;
+            display: flex;
             i {
               margin-right: 20px;
             }
@@ -79,8 +80,8 @@ footer {
           margin-bottom: 50px;
         }
         .static_map {
-          width: 300px;
-          height: 300px;
+          width: 350px;
+          height: 350px;
           img {
             width: 100%;
           }
@@ -116,5 +117,4 @@ footer {
       }
     }
   }
-
 }
