@@ -175,19 +175,16 @@
 
       <!-- SECTION FIVE -->
       <section class="section" id="section_5">
+        <!-- v-for="(element, index) in carousel" -->
         <div class="carousel_container">
-          <h2>Our Home Owners Say</h2>
+          <h2>{{carousel[carouselIndex].title}}</h2>
           <hr>
-          <img src="img/home-testimonial.webp" alt="">
-          <p>“Many novice real estate investors soon quit the profession and invest. When you invest in real estate, you often see a side of humanity that stocks, bonds, mutual funds, and saving money shelter you from.”</p>
-          <h2>HARRY SMITH • NEW HOME OWNER</h2>
+          <img :src="carousel[carouselIndex].img" alt="">
+          <p> {{carousel[carouselIndex].paragraph}}</p>
+          <h2>{{carousel[carouselIndex].footer}}</h2>
           <div class="carousel_circle">
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
+            <i v-for="(element, index) in carousel" class="far fa-circle" :class="(index == carouselIndex)? 'fas' : 'far'"
+            @click="carouselIndex = index"></i>
           </div>
         </div>
       </section>

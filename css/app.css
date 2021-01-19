@@ -545,6 +545,7 @@ header #header_bot a:hover {
 #section_5 .carousel_container .carousel_circle i {
   padding: 0 10px;
   color: white;
+  cursor: pointer;
 }
 
 #section_6 {

@@ -160,6 +160,22 @@ var app = new Vue({
       },
     ],
     // section five
+    carouselIndex: 0,
+    carousel: [
+      {
+        title: "Our Home Owners Say",
+        img: "img/home-testimonial.webp",
+        paragraph: "“Many novice real estate investors soon quit the profession and invest. When you invest in real estate, you often see a side of humanity that stocks, bonds, mutual funds, and saving money shelter you from.”",
+        footer: "HARRY SMITH • NEW HOME OWNER",
+      },
+      {
+        title: "Our Home Owners Say",
+        img: "img/home-testimonial2.webp",
+        paragraph: "“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”",
+        footer: "JOHN DOE • PROPERTY INVESTOR",
+      },
+    ],
+    // section six
     latestNewsTop: [
       {
         classContainer: "card card_1",
@@ -203,6 +219,7 @@ var app = new Vue({
         paragraph: "Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed",
       },
     ],
+
     // /MAIN
 
     // FOOTER
@@ -281,6 +298,18 @@ var app = new Vue({
       },
     ],
     // /FOOTER
+  },
+  mounted: function () {
+    setInterval(
+     () => {
+       // OGNI SECONDO AUMENTA DI UNO L'INDICE
+      this.carouselIndex++;
+      // SE IL NUMERO DELL'INDICE è UGUALE ALL'ULTIMO INDICE IN ARRAY
+      if (this.carouselIndex == this.carousel.length) {
+        // IMPOSTA L'INDICE A ZERO
+        this.carouselIndex = 0;
+      };
+    }, 3000);
   },
   methods: {
   },
